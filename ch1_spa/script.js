@@ -26,7 +26,7 @@ var spa = (function($) {
       if (slider_height === configMap.retracted_height) {
         $chatSlider
           .animate({ height : configMap.extended_height })
-          .attr({ 'title', configMap.extended_title });
+          .attr({ 'title': configMap.extended_title });
         return true;
       }
       // retract slider if fully extended
@@ -62,7 +62,7 @@ var spa = (function($) {
         return true;
     };
 
-    return {initModule : iniModule };
+    return {initModule : initModule };
 }(jQuery));
 // Start spa once dom is ready
 
