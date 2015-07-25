@@ -4,14 +4,10 @@ white: true */
 
 /*global $, spa */
 
-// spa object/anon function 
+// spa object/anon function
 var spa = (function() {
     var initModule = function($container) {
-      $container.html(
-        '<h1 style="display:inline-block; margin: 25px;">'
-        + 'hello world!'
-        + '</h1>'
-      );
+      spa.shell.initModule($container);
     };
     // return method on the spa object
     return { initModule: initModule };
