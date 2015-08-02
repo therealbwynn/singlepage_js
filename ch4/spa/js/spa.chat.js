@@ -243,7 +243,7 @@ spa.chat = (function() {
 
     // initializes chat slider to default title and state
     jqueryMap.$toggle.prop( 'title', configMap.slider_closed_title );
-    jqueryMap.$head.click( 'onClickToggle');
+    jqueryMap.$head.click( onClickToggle );
     stateMap.position_type = 'closed';
   };
   // End public method /initModule/
