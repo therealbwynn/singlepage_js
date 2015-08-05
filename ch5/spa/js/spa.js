@@ -6,7 +6,9 @@ white: true */
 
 // spa object/anon function
 var spa = (function() {
+  'use strict'
     var initModule = function($container) {
+      spa.model.initModule();
       spa.shell.initModule($container);
     };
     // return method on the spa object
